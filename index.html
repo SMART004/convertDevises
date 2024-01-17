@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertisseur de devises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <h2>Convertisseur de dévises</h2>
+        <div class="valeur">
+            <div class="val1">{{unity}}</div>
+            <div class="val2">{{value}}</div>
+        </div>
+        <div class="convert">
+            <div class="input">
+                <select>
+                </select>
+                <input type="number" v-model="price" placeholder="Entrez un prix">
+            </div>
+            <span>sortie</span>
+            <div class="output">
+                <select>
+                </select>
+                <div class="result">{{input2}}</div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="main.js"></script>
+<script>
+  const mount = app.mount("#app")
+</script>
+</html>
